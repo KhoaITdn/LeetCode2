@@ -23,3 +23,5 @@ var twosum = function( nums, target){
     }
 
 }
+
+?/ cách 3
