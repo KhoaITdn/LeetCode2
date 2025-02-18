@@ -42,3 +42,13 @@ public int bSearch(int[] a, int L, int R, int target){
     return bSearch(a, L, mid - 1, target);
 
 }
+
+// Chúng ta có mảng nums = [-1, 0, 3, 5, 9, 12] và target = 9. 
+// Đầu tiên thì index bên trái và phải ta sẽ tạm gọi là L và R sẽ có giá trị là
+//  tận cùng hai đầu của mảng, hay nói cách khác L = 0 và R = n - 1 = 5.
+//  Tiếp theo, để tìm index chính giữa, tạm gọi là mid ta sẽ lấy(L + R) / 2:
+//  Khi này ta so sánh nums[mid] với target thì thấy 3 < 9 nên suy ra số cần tìm nằm phía bên phải của mid:
+//  Ta lặp lại bước đầu tiên, nhưng lần này L = mid + 1. Ta lại tìm mid:
+//  Lúc này ta so sánh nums[mid] thì thấy bằng với target, thỏa mãn điều kiện đề bài,
+//     ta trả về kết quả là mid chính là index của target trong mảng nums:
+
