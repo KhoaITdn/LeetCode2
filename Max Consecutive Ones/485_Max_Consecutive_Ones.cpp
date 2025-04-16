@@ -1,26 +1,30 @@
-#include <iostream>;
+#include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
-
-int findMaxConsecutiveOnes(vector<int>$ nums)
+int findMaxConsecutiveOnes(vector<int> nums)
 {
-
-
-    return 0;
-}
-
-int main(){
-
-    int a[] = {1,1,0,1,1,1};
-    vector<int> a(arr, arr + (sizeof(arr)/sizeof(int)));
-
-    for (i = 0; i <a.size(); i++)
+    int max= 0;
+    int count = 0;
+    for (int i = 0; i < nums.size(); i++)
     {
-        /* code */
-        cout <<a[i] << " ";
+        if (nums[i] == 1)
+        {
+            count = 0;
+        }
+        else
+        {
+            count++;
+            max = (count > max) ? count : max;
+            
+        }
     }
-    
-
-
-    return 0;
+    return max;
 }
+
+
+
+// bubble sort
+
+
