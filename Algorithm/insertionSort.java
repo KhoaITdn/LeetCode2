@@ -1,26 +1,26 @@
 package Algorithm;
 
-public class insertionSort {
-    
-    public static void insertionSort(int[] a) { // giống như đánh bài tây 
+public class InsertionSort {
+
+    public static void insertionSort(int[] a) {
         int n = a.length;
-        for (int i = 1; i < n; i++) { // bắt đầu từ phần tử thứ 2
-            // vì phần tử đầu tiên đã được sắp xếp rồi
-            // tìm vị trí chèn cho phần tử thứ
-            int key = a[i]; // phần tử cần chèn 
+        for (int i = 1; i < n; i++) {
+            int key = a[i];
             int j = i - 1;
             while (j >= 0 && a[j] > key) {
                 a[j + 1] = a[j];
                 j--;
             }
             a[j + 1] = key;
+
             printArray(i, a);
         }
     }
 
     private static void printArray(int i, int[] a) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'printArray'");
+        System.out.print("Lần lặp " + (i) + ": ");
+        for (int x : a) System.out.print(x + " ");
+        System.out.println();
     }
 
     public static void main(String[] args) {
