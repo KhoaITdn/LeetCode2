@@ -2,6 +2,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "DemKyTu",
+            "request": "launch",
+            "mainClass": "Algorithm.DemKyTu",
+            "projectName": "LeetCode2_ae474703"
+        },
+        {
+            "type": "java",
+            "name": "TongSoNguyenTo",
+            "request": "launch",
+            "mainClass": "Algorithm.TongSoNguyenTo",
+            "projectName": "LeetCode2_ae474703"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Shape.Main",
+            "projectName": "LeetCode2_ae474703"
+        },
+        {
             "name": "C++: g++.exe Build & Debug Active File",
             "type": "cppdbg",
             "request": "launch",
