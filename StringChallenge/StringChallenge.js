@@ -23,5 +23,5 @@ function StringChallenge(Str) {
 }
 
 // Ví dụ:
-console.log(StringChallenge("4546793")); // Output: 454*67-9-3
+console.log(StringChallenge("29292")); // Output: 2*9-2*9-2
 console.log(StringChallenge("123456789")); // Output: 1*2*3*4*5*6*7*8*9
