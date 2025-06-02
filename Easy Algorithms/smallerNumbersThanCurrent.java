@@ -1,3 +1,7 @@
+
+import java.util.HashSet;
+import java.util.Set;
+
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
     int[] list = new int [nums.length];
