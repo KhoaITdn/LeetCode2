@@ -3,6 +3,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "minindex",
+            "request": "launch",
+            "mainClass": "minindex"
+        },
+        {
+            "type": "java",
             "name": "DemKyTu",
             "request": "launch",
             "mainClass": "Algorithm.DemKyTu",
